@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote name="OnePlus6T-Development" fetch="https://github.com/OnePlus6T-Development" />
+  <remote name="TheMuppets" fetch="https://github.com/TheMuppets" />
+  
+  <!-- OnePlus 6T device tree -->
+  <project path="device/oneplus/fajita" name="device_oneplus_fajita" remote="OnePlus6T-Development" revision="sunos/varuna" />
+  <project path="vendor/oneplus/fajita" name="proprietary_vendor_oneplus_fajita" remote="TheMuppets" revision="lineage-22.2" />
+  
+  <!-- OnePlus 6  device tree -->
+  <project path="device/oneplus/enchilada" name="device_oneplus_enchilada" remote="OnePlus6T-Development" revision="sunos/varuna" />
+  <project path="vendor/oneplus/enchilada" name="proprietary_vendor_oneplus_enchilada" remote="TheMuppets" revision="lineage-22.2" />
+  
+  <!-- Common tree -->
+  <project path="device/oneplus/sdm845-common" name="device_oneplus_sdm845-common" remote="OnePlus6T-Development" revision="sunos/varuna" />
+  <project path="vendor/oneplus/sdm845-common" name="vendor_oneplus_sdm845-common" remote="OnePlus6T-Development" revision="sunos/varuna" />
+  <project path="hardware/oneplus" name="hardware_oneplus" remote="OnePlus6T-Development" revision="sunos/varuna" />
+
+  <!-- Please clone kernel source manually. -->
+
   <!-- sm8050 -->
   <remote name="privategh" fetch="https://github.com/" />
   <project path="hardware/qcom-caf/sm8050/audio" name="OnePlus6T-Development/hardware_qcom-caf_sm8050_audio" groups="qcom" revision="lineage-22.2-caf-sm8050" remote="privategh" />
@@ -25,4 +43,5 @@
     <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8750/audio/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />
   </project>
+  
 </manifest>
