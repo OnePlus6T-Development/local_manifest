@@ -24,8 +24,7 @@
   <project path="hardware/qcom-caf/sm8050/display" name="OnePlus6T-Development/hardware_qcom-caf_sm8050_display" groups="qcom" revision="lineage-22.2-caf-sm8050" remote="privategh" />
   <project path="hardware/qcom-caf/sm8050/media" name="OnePlus6T-Development/hardware_qcom-caf_sm8050_media" groups="qcom" revision="lineage-22.2-caf-sm8050" remote="privategh" />
   <project path="device/qcom/sepolicy_vndr/sm8050" name="OnePlus6T-Development/device_qcom_sepolicy_vndr_sm8050" groups="qcom" revision="lineage-22.2-sm8050" remote="privategh" /> 
-  <remove-project name="SunOS-Project/android_device_qcom_common" />
-  <project path="device/qcom/common" name="OnePlus6T-Development/hardware_qcom-caf_common" remote="privategh" revision="varuna" >
+  <project path="hardware/qcom-caf/common" name="OnePlus6T-Development/hardware_qcom-caf_common" remote="privategh" revision="lineage-22.2-sm8050" >
     <!-- add guards for CAF repositories -->
     <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8050/Android.bp" />
